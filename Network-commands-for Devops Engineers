@@ -1,0 +1,128 @@
+#Network Configuration
+
+1. ip addr show
+
+Example: ip addr show eth0
+
+Displays IP addresses and network interfaces, including the IP address, netmask, and broadcast address for each interface.
+
+2. ip link show
+
+Example: ip link show eth0
+
+Displays network interface settings, including the interface name, IP address, and link speed.
+
+3. ip addr add <IP-address>/<netmask> dev <interface>
+
+Example: ip addr add (link unavailable) dev eth0
+
+Adds an IP address to an interface.
+
+4. ip addr del <IP-address>/<netmask> dev <interface>
+
+Example: ip addr del (link unavailable) dev eth0
+
+Deletes an IP address from an interface.
+
+5. ip link set <interface> up/down
+
+Example: ip link set eth0 up
+
+Enables or disables a network interface.
+
+#Network Troubleshooting
+
+1. ping <IP-address>
+
+Example: ping 8.8.8.8
+
+Tests network connectivity to a destination IP address.
+
+2. traceroute <IP-address>
+
+Example: traceroute 8.8.8.8
+
+Traces the network path to a destination, showing each hop along the way.
+
+3. dig <domain-name>
+
+Example: dig (link unavailable)
+
+Performs DNS lookups and displays detailed information about the domain.
+
+4. nslookup <domain-name>
+
+Example: nslookup (link unavailable)
+
+Performs DNS lookups and displays basic information about the domain.
+
+5. tcpdump
+
+Example: tcpdump -i eth0
+
+Captures and displays network packets, allowing you to inspect traffic on a specific interface.
+
+6. netstat
+
+Example: netstat -tlnp
+
+Displays active network connections and sockets.
+
+#Network Security
+
+1. ufw
+
+Example: ufw allow ssh
+
+Configures and manages firewall rules using the Uncomplicated Firewall.
+
+2. iptables
+
+Example: iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+Configures and manages firewall rules using the legacy iptables system.
+
+3. ssh
+
+Example: ssh user@remote-server
+
+Enables secure remote access and communication.
+
+4. ssl/tls
+
+Example: openssl s_client -connect (link unavailable)
+
+Encrypts network communication using Secure Socket Layer/Transport Layer Security.
+
+#Network Monitoring
+
+1. top
+
+Example: top -c
+
+Displays system processes and network usage.
+
+2. htop
+
+Example: htop -c
+
+Displays an interactive process viewer with network usage.
+
+3. nload
+
+Example: nload eth0
+
+Displays network interface usage.
+
+4. vnstat
+
+Example: vnstat -i eth0
+
+Displays network interface statistics.
+
+5. sysdig
+
+Example: sysdig -c
+
+Performs system debugging and network analysis.
+
